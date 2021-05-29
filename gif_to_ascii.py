@@ -15,8 +15,8 @@ symb = [' ', '.', ':', '-', '=', '+', '*', '#', '%', '@']
 frames = []
 line = ""
 lines = []
-height = 65
-width = math.floor((gif.size[0]*(56/gif.size[1]))*2.1)
+height = 57
+width = math.floor((gif.size[0]*(height/gif.size[1]))*2.1)
 os.mkdir(tmp_dir_name)
 
 # save each frame to png image

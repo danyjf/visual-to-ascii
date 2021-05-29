@@ -3,8 +3,8 @@ from PIL import Image
 import math
 
 im = Image.open(sys.argv[1])
-height = 65
-width = math.floor((im.size[0]*(56/im.size[1]))*2.1)
+height = 57
+width = math.floor((im.size[0]*(height/im.size[1]))*2.1)
 im_resized = im.resize((width, height))
 symb = [' ', '.', ':', '-', '=', '+', '*', '#', '%', '@']
 # symb = [' ', '.', '^', ':', '!', '-', '=', '+', '0', '*', '#', '&', '%', '@', '$']
